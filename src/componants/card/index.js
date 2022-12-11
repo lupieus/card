@@ -56,6 +56,9 @@ function ImageCard() {
 
         data.append('imageFront', imageFront.imageFront);
 
+
+        
+
         axios.post('http://localhost:8081/api/image-upload-front', data)
             .then(res => {
                 console.log(res.data + 'this is data after api call');
